@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>숫자 변경 예제</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+        }
+        .box {
+            width: 180px;
+            height: 100px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 100px;
+            border: 3px solid;
+            color: black;
+            border-radius: 10px;
+        }
+        .red-box {
+            background-color: white;
+            border-color: red;
+            margin-bottom: 10px;
+        }
+        .black-box {
+            background-color: white;
+            border-color: black;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            font-size: 18px;
+            margin: 0 5px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-container">
+            <button id="decreaseBtn">-</button>
+            <div class="box black-box">
+                <span id="blackBox">0</span>
+            </div>
+            <button id="increaseBtn">+</button>
+        </div>
+        <input class="box red-box" id="redBox">0</input>
+    </div>
+
+    <script>
+        var redBox = document.getElementById('redBox');
+        var blackBox = document.getElementById('blackBox');
+        var increaseBtn = document.getElementById('increaseBtn');
+        var decreaseBtn = document.getElementById('decreaseBtn');
+
+        increaseBtn.addEventListener('click', function() {
+            var number = parseInt(redBox.value);
+            var number1 = parseInt(blackBox.innerText);
+            
+            
+            blackBox.innerText = number + number1;
+        });
+
+        decreaseBtn.addEventListener('click', function() {
+            var number = parseInt(redBox.value);
+            var number1 = parseInt(blackBox.innerText);
+            var n = number1 - number
+            if (n >= 0) {
+               blackBox.innerText = n
+                
+            }
+        });
+
+    </script>
+</body>
+</html>
