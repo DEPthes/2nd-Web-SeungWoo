@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-title">Momentum App</h1>
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          id="login-input"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      <div class="clock-container">
+        <h2 id="clock">00:00:00</h2>
+        <h3 id="greeting" class="hidden"></h3>
+      </div>
+      <div class="todo-container">
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Add a ToDo and Press Enter" required />
+          <select id="category-select">
+            <option value="" selected disabled hidden>Select a category</option>
+            <option value="work">Work</option>
+            <option value="study">Study</option>
+            <option value="personal">Personal</option>
+          </select>
+        </form>
+        <ul id="todo-list"></ul>
+        <div class="filter-container">
+          <label for="category-filter">Filter by Category:</label>
+          <select id="category-filter">
+            <option value="" selected>All</option>
+            <option value="work">Work</option>
+            <option value="study">Study</option>
+            <option value="personal">Personal</option>
+          </select>
+        </div>
+      </div>
+      <div class="quote-container">
+        <div id="quote">
+          <span id="quote-text"></span>
+          <span id="quote-author"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="g.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="td.js"></script>
+  </body>
+</html>

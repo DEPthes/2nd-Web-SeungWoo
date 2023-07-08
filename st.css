@@ -1,0 +1,162 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .clock-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #clock {
+    font-size: 48px;
+    color: #333;
+  }
+  
+  #greeting {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .todo-container {
+    margin-bottom: 20px;
+  }
+  
+  #todo-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+  }
+  
+  #category-select {
+    flex: 0.4;
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background-color: #f7f7f7;
+    color: #555;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #todo-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  #todo-list li span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #todo-list li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  #todo-list li button:hover {
+    color: #ff4646;
+  }
+  
+  .filter-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  #category-filter {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    background-color: #f7f7f7;
+    color: #555;
+  }
+  
+  .quote-container {
+    text-align: center;
+  }
+  
+  #quote {
+    margin-top: 20px;
+  }
+  
+  #quote span {
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  #quote span:last-child {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: normal;
+    color: #777;
+  }
+  
